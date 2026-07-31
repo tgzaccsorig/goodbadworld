@@ -139,5 +139,22 @@ width:100%;
 .play-btn{
 width:100%;
 }
+  .buy-btn{
+display:block;
+margin-top:15px;
+padding:12px;
+background:#ffd700;
+color:#111;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+border-radius:10px;
+transition:.3s;
+}
+
+.buy-btn:hover{
+background:#ffbf00;
+transform:scale(1.05);
+}
 
 }

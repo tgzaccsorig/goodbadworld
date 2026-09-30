@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Правила проекта GoodBadWorld">
+    <title>Правила — GoodBadWorld</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+            radial-gradient(circle at top, rgba(80, 80, 80, 0.18), transparent 40%),
+            #0b0b0b;
+        color: #eeeeee;
+        line-height: 1.7;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(12px);
+        background: rgba(10, 10, 10, 0.88);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .topbar-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: 800;
+        color: #ffffff;
+    }
+
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 15px;
+        border-radius: 10px;
+        background: #1b1b1b;
+        border: 1px solid #333;
+        color: #fff;
+        transition: 0.2s ease;
+    }
+
+    .back-button:hover {
+        background: #292929;
+        transform: translateY(-1px);
+    }
+
+    .container {
+        width: min(100% - 30px, 1000px);
+        margin: 0 auto;
+        padding: 55px 0 80px;
+    }
+
+    .hero {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .hero h1 {
+        margin: 0 0 12px;
+        font-size: clamp(32px, 6vw, 52px);
+        font-weight: 900;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        margin: 7px 0;
+        color: #a9a9a9;
+    }
+
+    .warning {
+        margin: 25px auto 0;
+        max-width: 850px;
+        padding: 17px 20px;
+        border-radius: 14px;
+        background: rgba(255, 166, 0, 0.08);
+        border: 1px solid rgba(255, 166, 0, 0.25);
+        color: #ffd27a;
+    }
+
+    .rules-card {
+        background: rgba(20, 20, 20, 0.94);
+        border: 1px solid #292929;
+        border-radius: 18px;
+        padding: clamp(20px, 4vw, 42px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .section {
+        padding: 10px 0 25px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #292929;
+    }
+
+    .section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin: 0 0 18px;
+        color: #ffffff;
+        font-size: clamp(21px, 4vw, 29px);
+    }
+
+    h3 {
+        margin: 24px 0 10px;
+        color: #f0f0f0;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 8px 0;
+    }
+
+    .rule {
+        margin: 7px 0;
+        padding-left: 8px;
+    }
+
+    .subrule {
+        margin: 6px 0;
+        padding-left: 24px;
+        color: #d2d2d2;
+    }
+
+    .punishment {
+        color: #ffb0b0;
+    }
+
+    .allowed {
+        color: #a9e6b0;
+    }
+
+    .footer {
+        text-align: center;
+        color: #777;
+        margin-top: 35px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        .topbar-inner {
+            padding: 12px 14px;
+        }
+
+        .container {
+            width: min(100% - 18px, 1000px);
+            padding-top: 35px;
+        }
+
+        .rules-card {
+            border-radius: 14px;
+            padding: 20px 16px;
+        }
+
+        .subrule {
+            padding-left: 14px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="logo">GoodBadWorld</a>
+
+```
+    <a href="index.html" class="back-button">
+        ← На главную
+    </a>
+</div>
+```
+
+</header>
+
+<main class="container">
+
+```
+<div class="hero">
+    <h1>📜 Правила GoodBadWorld</h1>
+
+    <p>Действительная версия на момент публикации.</p>
+
+    <p>
+        Адреса проекта:
+        <strong>goodbadworld.falixsrv.me</strong>,
+        <strong>pinio.falixsrv.me</strong>
+    </p>
+
+    <p>Все остальные домены — не наши.</p>
+
+    <div class="warning">
+        ⚠️ Заходя на сервер, ты автоматически соглашаешься с этими правилами.
+        Незнание не освобождает от наказания.
+    </div>
+</div>
+
+<div class="rules-card">
+
+    <section class="section">
+        <h2>1. ОБЩИЕ ПОЛОЖЕНИЯ</h2>
+
+        <p class="rule">1.1 Проект GoodBadWorld — это комплекс серверов Minecraft (выживание и другие режимы).</p>
+
+        <p class="rule">1.2 Правила могут меняться. О значимых изменениях пишем на форуме/Discord проекта.</p>
+
+        <p class="rule">1.3 Решения главной администрации (tgzaccs, pinio) не обсуждаются. Главная администрация может выдать наказание вне рамок этих правил, если действие вредит проекту.</p>
+
+        <p class="rule">1.4 Администрация не возвращает ресурсы, потерянные из-за:</p>
+        <p class="subrule">· лагов, киков, багов сервера</p>
+        <p class="subrule">· действий читеров</p>
+        <p class="subrule">· действий других игроков</p>
+
+        <p class="rule">1.5 Запрещено:</p>
+        <p class="subrule">· продажа, покупка, передача, взлом аккаунтов</p>
+        <p class="subrule">· продажа/покупка чего-либо за реальные деньги внутри игры (РМТ)</p>
+        <p class="subrule">· распространение личных данных игроков</p>
+        <p class="subrule">· любой вред проекту</p>
+
+        <p class="rule punishment">Наказание: отключение всех аккаунтов без права разбана. Ответственность несёт владелец аккаунта — даже если его взломали или он сам передал аккаунт.</p>
+
+        <p class="rule">1.6 Правило здравого смысла. Если действие не описано в правилах, но явно портит игру другим — администрация вправе наказать.</p>
+    </section>
+
+    <section class="section">
+        <h2>2. РЕГИСТРАЦИЯ И АККАУНТ</h2>
+
+        <p class="rule">2.1 Никнейм должен быть адекватным. Запрещены ники:</p>
+        <p class="subrule">· 2.1.1 Похожие на ники администрации (кроме ютуберов проекта)</p>
+        <p class="subrule">· 2.1.2 Сексуального/аморального содержания</p>
+        <p class="subrule">· 2.1.3 Оскорбляющие других игроков</p>
+        <p class="subrule">· 2.1.4 Содержащие названия читов/запрещённого ПО</p>
+        <p class="subrule">· 2.1.5 С нецензурной лексикой</p>
+        <p class="subrule">· 2.1.6 С рекламой других проектов</p>
+        <p class="subrule">· 2.1.7 Связанные со смертью сотрудников проекта</p>
+
+        <p class="rule punishment">Наказание: блокировка аккаунта. Для сменённых ников — предупреждение, потом блок.</p>
+
+        <p class="rule">2.2 При покупке платных услуг сохраняй чек. Без чека восстановление невозможно.</p>
+
+        <p class="rule">2.3 При взломе/утере аккаунта — пиши в техподдержку. Восстановление только при наличии чека и привязки. Безопасность аккаунта — твоя ответственность.</p>
+    </section>
+
+    <section class="section">
+        <h2>3. ПЛАТНЫЕ УСЛУГИ</h2>
+
+        <p class="rule">3.1 Игра бесплатная. Все покупки — добровольные пожертвования на развитие проекта.</p>
+        <p class="rule">3.2 Возврата средств нет.</p>
+        <p class="rule">3.3 Если оплатил, но услуга не пришла — в техподдержку с чеком.</p>
+        <p class="rule">3.4 Платная группа не даёт права нарушать правила.</p>
+    </section>
+
+    <section class="section">
+        <h2>4. ЧАТ И ОБЩЕНИЕ</h2>
+
+        <h3>4.1 Флуд и спам</h3>
+        <p class="subrule">· 4.1.1 3+ одинаковых/похожих сообщения подряд за минуту — мут 4ч</p>
+        <p class="subrule">· 4.1.2 Организованный флуд (сговор, твинки, «+ в чат», опросы) — мут 6ч каждому</p>
+        <p class="subrule">· 4.1.3 Обход мута через /bc, твинки, объявления — мут 6ч + 4ч твинку</p>
+        <p class="subrule">· 4.1.4 Флуд символами/смайлами (10+ подряд) — мут 4ч</p>
+        <p class="subrule">· 4.1.5 Капс больше 50% в предложении из 3+ слов — мут 4ч</p>
+
+        <h3>4.2 Оскорбления и поведение</h3>
+        <p class="subrule">· 4.2.1 Оскорбления, унижения, угрозы игрокам — мут 4ч</p>
+        <p class="subrule">· 4.2.2 Мат без причины — мут 3ч</p>
+        <p class="subrule">· 4.2.3 Аморальные темы (18+) — мут 3ч</p>
+        <p class="subrule">· 4.2.4 Призывы к суициду — мут 6ч</p>
+        <p class="subrule">· 4.2.5 Неадекватное поведение, травля — мут 12ч</p>
+
+        <h3>4.3 Оскорбление родных</h3>
+        <p class="subrule">· 4.3.1 Некорректное упоминание родителей — мут 5 дней</p>
+        <p class="subrule">· 4.3.2 Прямое оскорбление родителей — мут 15 дней</p>
+        <p class="subrule">· 4.3.3 Оскорбление своих родителей — мут 5 дней</p>
+
+        <h3>4.4 Оскорбление проекта</h3>
+        <p class="subrule">· 4.4.1 Оскорбление проекта в любом чате — бан 30 дней</p>
+        <p class="subrule">· 4.4.2 Публичная критика проекта — мут 3 дня</p>
+
+        <h3>4.5 Оскорбление администрации/ютуберов</h3>
+        <p class="subrule">· 4.5.1 Оскорбление админов — бан 10 дней</p>
+        <p class="subrule">· 4.5.2 Оскорбление родных админов — бан 20 дней</p>
+        <p class="subrule">· 4.5.3 Оскорбительные шутки в сторону админов/ютуберов — бан 2 дня</p>
+        <p class="subrule">· 4.5.4 Неуважительное общение с админами — мут 12ч</p>
+        <p class="subrule">· 4.5.5 Угроза админу наказанием/снятием — мут 4ч</p>
+        <p class="subrule">· 4.5.6 Оскорбление ютуберов проекта — бан 10 дней</p>
+        <p class="subrule">· 4.5.7 Оскорбление родных ютуберов — бан 20 дней</p>
+
+        <h3>4.6 Выдача себя за администрацию</h3>
+        <p class="subrule">· 4.6.1 Выдача за админа — бан 3 дня</p>
+        <p class="subrule">· 4.6.2 Угрозы баном/киком/мутом — бан 12ч</p>
+
+        <h3>4.7 Выпрашивание</h3>
+        <p class="subrule">· 4.7.1 Выпрашивание снятия наказания у админов — мут 2ч (кроме tgzaccs/pinio)</p>
+        <p class="subrule">· 4.7.2 Выпрашивание ресурсов у персонала — мут 1ч (кроме tgzaccs/pinio)</p>
+
+        <h3>4.8 Ложная информация</h3>
+        <p class="subrule">· 4.8.1 Дезинформация игроков — мут 12ч / 4 дня (повтор)</p>
+        <p class="subrule">· 4.8.2 Внеигровой обман (Alt+F4, F3+C и т.п.) — мут 6ч</p>
+
+        <h3>4.9 Реклама и ссылки</h3>
+        <p class="subrule">· 4.9.1 Упоминание сторонних ресурсов/соцсетей — мут 1 день, обход — 3 дня</p>
+        <p class="subrule">· 4.9.2 Упоминание Discord/Telegram-контактов — бан 2 дня (кроме ЛС и локалки с модером)</p>
+        <p class="subrule">· 4.9.3 Реклама сторонних проектов — пермбан</p>
+        <p class="subrule">· 4.9.4 Реклама в ЛС — пермбан</p>
+        <p class="subrule">· 4.9.5 Вредоносные ссылки (скримеры, стиллеры) — бан 14 дней</p>
+
+        <h3>4.10 Политика и пропаганда</h3>
+        <p class="subrule">· 4.10.1 Политика, агитация — бан 3/7 дней или мут 2 дня</p>
+        <p class="subrule">· 4.10.2 Пропаганда нацизма/расизма/наркотиков/оружия — бан 3 дня</p>
+        <p class="subrule">· 4.10.3 Пропаганда терроризма — бан 7 дней</p>
+        <p class="subrule">· 4.10.4 Оскорбление чувств верующих — бан 3 дня</p>
+
+        <h3>4.11 Личные данные и мошенничество</h3>
+        <p class="subrule">· 4.11.1 Доксинг/сватинг, угрозы — бан 30 дней / отключение аккаунта</p>
+        <p class="subrule">· 4.11.2 Доксинг в сторону сотрудника — отключение аккаунта</p>
+        <p class="subrule">· 4.11.3 Мошенничество в реальной жизни — бан 15 дней</p>
+        <p class="subrule">· 4.11.4 Упоминание денежных операций за реал — мут 2 дня</p>
+
+        <h3>4.12 Провокации и помехи</h3>
+        <p class="subrule">· 4.12.1 Провокация игроков на нарушение — бан 2/4 дня</p>
+        <p class="subrule">· 4.12.2 Помеха работе персонала — бан 6ч</p>
+        <p class="subrule">· 4.12.3 Помеха проверке — бан 10 дней</p>
+
+        <h3>4.13 Голосовой чат</h3>
+        <p class="subrule">· 4.13.1 Музыка/посторонние звуки в войсе — мут 6ч</p>
+        <p class="subrule">· 4.13.2 Оскорбления в войсе — мут 12ч</p>
+        <p class="subrule">· 4.13.3 Микрофонный спам/крик — мут 4ч</p>
+
+        <h3>4.14 Прочее</h3>
+        <p class="subrule">· 4.14.1 Бартер между играми — бан 4 дня</p>
+        <p class="subrule">· 4.14.2 Проверка чужого ПК через удалённый доступ — бан 20 дней, повтор — отключение</p>
+        <p class="subrule">· 4.14.3 Некорректный текст на табличках/регионах/книгах — бан 5/15/30 дней (айпи = пермбан)</p>
+    </section>
+
+    <section class="section">
+        <h2>5. ЧИТЫ И ЗАПРЕЩЁННОЕ ПО</h2>
+
+        <h3>5.1 Общее</h3>
+        <p class="subrule">· 5.1.1 Использование читов, вредоносного ПО, получение преимущества — бан 50 дней + снос дома (возможно отключение аккаунта)</p>
+        <p class="subrule">· 5.1.2 Совместная игра с читером — бан 47 дней</p>
+        <p class="subrule">· 5.1.3 Признание на проверке — бан 46 дней</p>
+        <p class="subrule">· 5.1.4 Признание в читерстве в чате — бан 10 дней</p>
+        <p class="subrule">· 5.1.5 Обход бана — блокировка основного навсегда + всех связанных</p>
+        <p class="subrule">· 5.1.6 Читы удалены менее 14 дней назад — бан 50 дней</p>
+        <p class="subrule">· 5.1.7 Хранение читов — бан 50 дней</p>
+        <p class="subrule">· 5.1.8 Хранение .bat на очистку — бан 20 дней</p>
+        <p class="subrule">· 5.1.9 Использование .bat на очистку — бан 50 дней</p>
+
+        <h3>5.2 Автоматизация</h3>
+        <p class="subrule">· 5.2.1 Авто-копалки/лесорубы — бан 5 дней</p>
+        <p class="subrule">· 5.2.2 Боты, макросы, плагины для автоматизации — бан 15 дней</p>
+        <p class="subrule">· 5.2.3 Макросы/кликеры (кроме фармилок) — бан 5/7/15/30/50 дней</p>
+        <p class="subrule">· 5.2.4 Неадекватное поведение на проверке — бан 50 дней</p>
+        <p class="subrule">· 5.2.5 Виртуальные машины, манипуляции с ПО для проверки — бан 50 дней</p>
+
+        <h3>5.3 Запрещённые моды и визуалы</h3>
+        <p class="subrule">· 5.3.1 Запрещённые визуалы/клиенты — бан 50 дней</p>
+        <p class="subrule allowed">· 5.3.2 Разрешённые визуалы: ReallyVisuals, PulseVisuals, EnoughVisuals (1.21.4)</p>
+        <p class="subrule">· 5.3.3 Полный список запрещённых модов — в закреплённом сообщении Discord/форума</p>
+    </section>
+
+    <section class="section">
+        <h2>6. ИГРОВОЙ ПРОЦЕСС</h2>
+
+        <p class="rule">· 6.1 Заливы, лаг-машины, багоюз, дюпы:</p>
+        <p class="subrule">· 6.1.1 Заливы и баги сервера — бан 25 дней</p>
+        <p class="subrule">· 6.1.2 Багоюз — бан 15 дней</p>
+        <p class="subrule">· 6.1.3 Лаг-машины — отключение аккаунта</p>
+        <p class="subrule">· 6.1.4 Дюпы — отключение аккаунта</p>
+
+        <p class="rule">· 6.2 Ловушки без выхода (стойки, рамки, снег, песок душ) — бан 25 дней + снос</p>
+        <p class="rule">· 6.3 Флуд командами (12+ раз) — кик, потом бан 12ч</p>
+        <p class="rule">· 6.4 Жалоба на админа с оскорблениями — бан 5 дней</p>
+        <p class="rule">· 6.5 Реклама/продажа читов, магазинов, Discord-каналов — пермбан</p>
+        <p class="rule">· 6.6 Кланы с нарушениями (оскорбления, аморалка, политика) — удаление клана + бан основателя 15 дней</p>
+        <p class="rule">· 6.7 Скам внутри игры (кидалово на ресурсы) — бан 7 дней + возврат ресурсов</p>
+    </section>
+
+    <section class="section">
+        <h2>7. ПРАВИЛА ПРОВЕРКИ</h2>
+
+        <p class="rule">7.1 Проверка только через Anydesk. Модеры не просят полный доступ — только мышь и клавиатуру.</p>
+        <p class="rule">7.2 Проверка только на ПК. Исключения: Bedrock, PojavLauncher.</p>
+        <p class="rule">7.3 Обязательные программы: SystemInformer, Everything, RecentFilesView, ShellbagAnalyzer, RegScanner, JournalTrace.</p>
+        <p class="rule">7.4 Скачивание только с официальных сайтов/GitHub.</p>
+        <p class="rule">7.5 Mod+ и выше могут проверить FunPay и подобные сайты при подозрении на РМТ.</p>
+        <p class="rule">7.6 Если Anydesk не работает — проверка через Discord.</p>
+    </section>
+
+    <section class="section">
+        <h2>8. ДОНАТЕРАМ</h2>
+
+        <p class="rule">· 8.1 /bc не по назначению, нарушение правил раздела 4, подделка сообщений сервера — бан 1–4 дня</p>
+
+        <p class="rule">· 8.2 Кастомный префикс должен быть адекватным. Запрещены оскорбительные префиксы и выдача за админа (Helper, Moder, Admin, Owner, Developer, Support). Префикс проходит модерацию. При отказе деньги не возвращаются.</p>
+    </section>
+
+    <section class="section">
+        <h2>9. НАКАЗАНИЯ И АПЕЛЛЯЦИИ</h2>
+
+        <p class="rule">9.1 Все наказания выдаются по регламенту. Модерация обязана указать пункт правил.</p>
+        <p class="rule">9.2 Апелляция — через Discord/форум проекта. Флуд в ЛС админам = отказ.</p>
+        <p class="rule">9.3 Решения старшей администрации (tgzaccs, pinio) — окончательные.</p>
+        <p class="rule">9.4 Сроки хранения доказательств (скрины/записи проверок) — 30 дней.</p>
+    </section>
+
+    <section class="section">
+        <h2>10. ПРАВА АДМИНИСТРАЦИИ</h2>
+
+        <p class="rule">10.1 Администрация вправе наказать за действия, не описанные в правилах, но вредящие проекту (правило здравого смысла).</p>
+        <p class="rule">10.2 Главная администрация (tgzaccs, pinio) может выдавать наказания вне регламента.</p>
+        <p class="rule">10.3 Админ не обязан объяснять каждое решение, но обязан быть адекватным.</p>
+    </section>
+
+</div>
+
+<div class="footer">
+    © GoodBadWorld — правила проекта
+</div>
+```
+
+</main>
+
+</body>
+</html>
